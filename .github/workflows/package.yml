@@ -9,13 +9,13 @@ on:
         required: false
         default: ''
       create_release:
-        description: '是否同时创建 Release'
+        description: '是否同时创建 Release（默认创建）'
         required: false
-        default: 'false'
+        default: 'true'
         type: choice
         options:
-          - 'false'
           - 'true'
+          - 'false'
 
 jobs:
   package:
