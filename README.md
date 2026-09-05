@@ -42,22 +42,27 @@
 ---
 
 # mpv-sub-fastwhisper
-## 本仓库从：https://github.com/dyphire/mpv-sub-fastwhisper fork而来 增加了详细的教程.
 
-### AI subtitle generation
+> 📌 本仓库从 [dyphire/mpv-sub-fastwhisper](https://github.com/dyphire/mpv-sub-fastwhisper) fork 而来，增加了**详细的图文教程**。
 
-Generate srt subtitles through voice transcription using faster-whisper.
+---
 
-After the subtitles are generated the script will automatically try to call the GPT API* to translate the subtitles.
+### 🤖 AI 字幕生成
 
-- GPT API related configuration needs to be set in the script or script options by yourself
+通过 [faster-whisper](https://github.com/Purfview/whisper-standalone-win) 进行语音转录，自动生成 SRT 字幕。
 
-Dependency:
+字幕生成后，脚本会自动调用 GPT API 将字幕翻译为目标语言（默认中文）。
 
-- [faster-whisper](https://github.com/Purfview/whisper-standalone-win)
-- FFmpeg
+> 💡 GPT API 相关配置需自行在脚本选项中设置。
 
-### AI 字幕 使用教程：
+| 依赖 | 说明 |
+|------|------|
+| [faster-whisper](https://github.com/Purfview/whisper-standalone-win) | 本地语音识别引擎 |
+| FFmpeg | 音频处理 |
+
+---
+
+### 📖 AI 字幕 使用教程
 
 # 🎬 mpv 播放器 + AI 实时字幕生成 & 翻译 —— 小白完整教程
 
