@@ -237,6 +237,34 @@ D:\000\ai-whisper\_models\faster-whisper-large-v3\
 
 ## ⚙️ 第四步：配置 sub_fastwhisper.conf（核心步骤 🔥）
 
+> ⚠️ **重要提示：先检查文件是否齐全！**
+>
+> 开始配置前，请确认你的整合包中包含以下 **2 个文件**：
+>
+> | 文件 | 说明 |
+> |------|------|
+> | `sub-fastwhisper.lua` | AI 字幕脚本主文件 |
+> | `sub_fastwhisper.conf` | 配置文件 |
+>
+> **文件存放结构应如下：**
+>
+> ```
+> D:\000\mpv\portable_config\
+> ├── scripts\
+> │   └── sub-fastwhisper.lua       ← 脚本放这里
+> └── script-opts\
+>     └── sub_fastwhisper.conf      ← 配置文件放这里
+> ```
+>
+> ❌ 如果你的整合包里**没有这两个文件**，请从这里下载：
+>
+> - 📥 [sub-fastwhisper.lua](https://github.com/yosh-wang/mpv-AI-sub-fastwhisper/blob/master/sub-fastwhisper.lua)
+> - 📥 [sub_fastwhisper.conf](https://github.com/yosh-wang/mpv-AI-sub-fastwhisper/blob/master/sub_fastwhisper.conf)
+>
+> 下载后分别放到上面标注的对应目录中，再继续下面的步骤。
+
+---
+
 ### 1. 打开文件资源管理器，进入以下路径：
 
 📁 `D:\000\mpv\portable_config\script-opts\`
