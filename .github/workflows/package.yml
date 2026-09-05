@@ -1,0 +1,66 @@
+name: 打包 AI 字幕脚本
+
+on:
+  # 手动触发：在 Actions 页面点击 "Run workflow" 按钮
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号（可选，例如 1.0.0）'
+        required: false
+        default: ''
+      create_release:
+        description: '是否同时创建 Release'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置版本号
+        id: version
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            echo "VERSION=${{ inputs.version }}" >> $GITHUB_OUTPUT
+          else
+            echo "VERSION=$(date +%Y%m%d-%H%M)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 打包脚本文件
+        run: |
+          mkdir -p dist
+          # 将两个文件打包到 zip 中，保持原始文件名
+          zip -j "dist/mpv-AI-sub-fastwhisper-${{ steps.version.outputs.VERSION }}.zip" \
+            sub-fastwhisper.lua \
+            sub_fastwhisper.conf
+          echo "=== 打包完成，zip 内容如下 ==="
+          unzip -l "dist/mpv-AI-sub-fastwhisper-${{ steps.version.outputs.VERSION }}.zip"
+
+      - name: 上传工件（Artifact）
+        uses: actions/upload-artifact@v4
+        with:
+          name: mpv-AI-sub-fastwhisper-${{ steps.version.outputs.VERSION }}
+          path: dist/*.zip
+          retention-days: 30
+
+      - name: 创建 Release（可选）
+        if: inputs.create_release == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.VERSION }}
+          name: mpv-AI-sub-fastwhisper v${{ steps.version.outputs.VERSION }}
+          body: |
+            ## 📦 打包内容
+            - `sub-fastwhisper.lua` — AI 字幕脚本
+            - `sub_fastwhisper.conf` — 配置文件
+          files: dist/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
