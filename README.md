@@ -42,6 +42,7 @@
 ---
 
 # mpv-sub-fastwhisper
+## 本仓库从：https://github.com/dyphire/mpv-sub-fastwhisper 复制而来 增加了详细的教程.
 
 ### AI subtitle generation
 
@@ -55,3 +56,5 @@ Dependency:
 
 - [faster-whisper](https://github.com/Purfview/whisper-standalone-win)
 - FFmpeg
+
+### AI 字幕 使用教程：
