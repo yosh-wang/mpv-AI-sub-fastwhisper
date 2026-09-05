@@ -74,6 +74,11 @@
 >
 > 最终显示**双语字幕**：上排中文（白色字体）+ 下排原文（橙黄色字体）。
 
+- 🔵 上排：中文翻译（白色字体）
+- 🟠 下排：原文（橙黄色字体）
+
+![图片25](https://raw.githubusercontent.com/yosh-wang/mpv-AI-sub-fastwhisper/master/image/25.jpg)
+
 ---
 
 ## 📋 准备工作
