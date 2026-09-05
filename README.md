@@ -42,7 +42,7 @@
 ---
 
 # mpv-sub-fastwhisper
-## 本仓库从：https://github.com/dyphire/mpv-sub-fastwhisper 复制而来 增加了详细的教程.
+## 本仓库从：https://github.com/dyphire/mpv-sub-fastwhisper fork而来 增加了详细的教程.
 
 ### AI subtitle generation
 
