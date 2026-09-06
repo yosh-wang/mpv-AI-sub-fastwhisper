@@ -297,6 +297,11 @@ D:\000\ai-whisper\_models\faster-whisper-large-v3\
 > device=cuda
 > ```
 >
+> **第 9 行：** 去掉 `#`，使用 default
+> ```
+> compute_type=default
+> ```
+>
 > **第 33 行：** 填入第三步申请的 API Key ⭐
 > ```
 > api_key=你刚才复制的API-Key粘贴到这里
