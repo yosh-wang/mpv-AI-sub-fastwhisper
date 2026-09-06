@@ -256,10 +256,17 @@ D:\000\ai-whisper\_models\faster-whisper-large-v3\
 >     └── sub_fastwhisper.conf      ← 配置文件放这里
 > ```
 >
-> ❌ 如果你的整合包里**没有这两个文件**，请从这里下载：
+> ❌ 如果你的整合包里**没有这两个文件**，请从以下渠道下载：
+>
+> **方式一：GitHub 单独下载**
 >
 > - 📥 [sub-fastwhisper.lua](https://github.com/yosh-wang/mpv-AI-sub-fastwhisper/blob/master/sub-fastwhisper.lua)
 > - 📥 [sub_fastwhisper.conf](https://github.com/yosh-wang/mpv-AI-sub-fastwhisper/blob/master/sub_fastwhisper.conf)
+>
+> **方式二：网盘打包下载（两个文件一起）**
+>
+> - ☁️ [腾讯微云](https://share.weiyun.com/JvUReWAo)
+> - ☁️ [夸克网盘](https://pan.quark.cn/s/313fef506b00)
 >
 > 下载后分别放到上面标注的对应目录中，再继续下面的步骤。
 
