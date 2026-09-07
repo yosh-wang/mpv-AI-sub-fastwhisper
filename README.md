@@ -360,7 +360,7 @@ font_name=Noto Sans CJK SC
 
 ![图片22](https://raw.githubusercontent.com/yosh-wang/mpv-AI-sub-fastwhisper/master/image/22.jpg)
 
-### 5.4 屏幕左上角出现提示文字：
+### 5.4 屏幕左上角出现提示文字，右上角有一个实心的白色圆圈
 
 > `"AI subtitle generation in progress"`
 
