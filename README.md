@@ -297,9 +297,9 @@ D:\000\ai-whisper\_models\faster-whisper-large-v3\
 > device=cuda
 > ```
 >
-> **第 9 行：** 去掉 `#`，使用 default
+> **第 9 行：** 去掉 `#`，使用 default 【针对 RTX 50 系列显卡用户，https://github.com/dyphire/mpv-config/issues/323 建议设置 compute_type=float16】
 > ```
-> compute_type=default
+> compute_type=float16
 > ```
 >
 > **第 33 行：** 填入第三步申请的 API Key ⭐
