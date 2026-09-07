@@ -320,6 +320,9 @@ fast_whisper_path=D:\000\ai-whisper\faster-whisper-xxl.exe
 model=large-v3
 # 指定要使用的设备
 device=cuda
+# 指定要使用的计算类型，可用类型有：default,auto,int8,int8_float16,int8_float32,int8_bfloat16,int16,float16,float32,bfloat16
+# 针对 RTX 50 系列显卡用户，https://github.com/dyphire/mpv-config/issues/323 建议设置 compute_type=float16
+compute_type=float16
 # 换行前一行的最大字符数
 max_line_width=100
 # 指定输出路径
