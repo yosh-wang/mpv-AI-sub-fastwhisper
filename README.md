@@ -297,7 +297,7 @@ D:\000\ai-whisper\_models\faster-whisper-large-v3\
 > device=cuda
 > ```
 >
-> **第 9 行：** 去掉 `#`，使用 default 【针对 RTX 50 系列显卡用户，https://github.com/dyphire/mpv-config/issues/323 建议设置 compute_type=float16】
+> **第 9 行：** 去掉 `#`，使用 float16 【原因见：RTX50系列显卡：https://github.com/dyphire/mpv-config/issues/323 建议设置compute_type=float16】
 > ```
 > compute_type=float16
 > ```
